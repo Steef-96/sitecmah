@@ -1,0 +1,870 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>CMAH</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/style.css">
+		</head>
+		<body>
+
+			 
+<header id="header" id="home">
+			  	<!-- <div class="container header-top">
+			  		<div class="row">
+				  		<div class="col-6 top-head-left">
+				  			<ul>
+				  				<li><a href="#">Visit Us</a></li>
+				  				<li><a href="#">Buy Ticket</a></li>
+				  			</ul>
+				  		</div>
+				  		<div class="col-6 top-head-right">
+				  			<ul>
+		  						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-behance"></i></a></li>
+				  			</ul>
+				  		</div>			  			
+			  		</div>
+			  	</div> -->
+			  	<!-- <hr> -->
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html">
+							<img style="width: 130px;" src="img/logo_cmah.jpg" alt="" title="" />
+						</a>
+				      </div>
+
+
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li class="menu-active"><a href="index.html">Accueil</a></li>
+				          <li><a href="about.html">A propos</a></li>
+						  <li class="menu-has-children"><a href="services.html">Services</a>
+				            <ul>
+								<li><a href="services.html">Enregistrement des artisans</a></li>
+								<li><a href="blog-single.html">Accréditation / Certification</a></li>
+								<li><a href="blog-single.html">Accompagnement et conseils</a></li>
+								<li><a href="blog-single.html">Formations</a></li>
+				            </ul>
+				          </li>	
+				          <li><a href="gallery.html">Communication & Médias</a>
+						<ul>
+								<li><a href="gallery.html#presse">Communiqués de presse</a></li>
+								<li><a href="gallery.html#publication">Publications officielles</a></li>
+								<li><a href="gallery.html#gallery">Galeries photos et vidéos</a></li>
+								<li><a href="gallery.html#medias">Médias sociaux (liens vers les comptes officiels)s</a></li>
+				            </ul>
+						
+						</li>
+				          <li><a href="event.html">Événements</a></li>
+				          <li><a href="ticket.html">Espace artisans</a>
+							<ul>
+								<li><a href="blog-single.html">Inscription / Création de profil</a></li>
+								<li><a href="blog-single.html">Accès aux documents / formulaires</a></li>
+								<li><a href="blog-single.html">Insertion Professionnelle</a></li>
+								<li><a href="blog-single.html">Vente en ligne</a></li>
+								
+				            </ul>
+						</li>
+				          
+						   <li><a href="contact.html">Contact</a></li>	
+						   
+						 <li>
+						<div class="search-container">
+						<input 
+                		type="text" 
+						placeholder="Chache..."  
+						class="search-bar" 
+						id="searchBar" 
+						style="display: none;" >
+
+						 	 <button class="search-btn" id="searchBtn">
+              					  <i class="fa-solid fa-magnifying-glass"></i> <!-- Icon search (Font Awesome) -->
+            				</button>
+						</div>
+						
+						 <!-- Login icon -->
+
+		<div class="user-menu-container">
+            <a href="#" class="icon-btn" id="loginBtn">
+                <i class="fas fa-user"></i>  <!-- Icon login (itilizatè) -->
+            </a>
+
+			
+    <!-- Icône utilisateur -->
+    <!-- <div class="login-icon" id="loginIcon">
+        <i class="fas fa-user"></i>
+    </div> -->
+    
+    <!-- Menu déroulant -->
+    <div class="dropdown-menu" id="dropdownMenu">
+        <!-- Si non connecté -->
+        <div class="not-logged" id="notLoggedSection">
+            <a href="#" id="registerBtn">Inscription / Création de profil</a>
+        </div>
+        
+        <!-- Si connecté -->
+        <div class="logged-in" id="loggedInSection" style="display:none;">
+            <a href="profile.html">Profil</a>
+            <a href="notes.html">Notes</a>
+            <a href="calendar.html">Calendrier</a>
+            <a href="files.html">Fichiers personnels</a>
+            <a href="reports.html">Rapports</a>
+            <div class="language-selector">
+                <span>Langues :</span>
+                <select id="languageSelect">
+                    <option value="fr">Français</option>
+                    <option value="ht">Créole</option>
+                </select>
+            </div>
+            <a href="#" id="logoutBtn">Déconnexion</a>
+        </div>
+    </div>
+</div>
+
+<!-- Formulaire de connexion (modal caché) -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+</div>
+
+<!-- Formulaire d'inscription (modal caché) -->
+<div id="registerModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Inscription</h2>
+        <form id="registerForm">
+            <input type="text" id="registerName" placeholder="Nom complet" required>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="password" id="registerPassword" placeholder="Mot de passe" required>
+            <input type="password" id="confirmPassword" placeholder="Confirmer mot de passe" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+</div>
+
+					
+						</li>
+											
+				        </ul>
+
+						
+						
+				      </nav>	<!-- #nav-menu-container -->		    		
+			    	</div>
+					
+			    </div>
+			  </header>			<!-- #header -->
+
+			<!-- start banner Area -->
+
+
+			
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-8">
+							<h6 class="text-white">Openning on 21st February, 2018</h6>
+							<h1 class="text-white">
+								La Chambre des Métiers et de l’Artisanat d’Haïti (CMAH)				
+							</h1>
+							<p class="pt-20 pb-20 text-white">
+								«Un outil de développement socio-économique au service des professionnels et artisans haïtiens.»
+							</p>
+							<a href="index.html" class="primary-btn text-uppercase">Démarer</a>
+						</div>											
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start service Area -->
+			<section class="service-area pt-100" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-service">
+							  <span class="lnr lnr-clock"></span>
+							  <h4>Heures d’ouverture.</h4>
+							  <p>
+							  	Lun - Ven : 10h00 à 17h00
+								Sam : 12h00 à 15h00
+								Dimanche : Fermé
+							  </p>						 	
+							  <div class="overlay">
+							    <div class="text">
+							    	<p>
+							    		Ici, nous mettons l’accent sur une diversité de métiers, 
+										de savoir-faire et de créations artistiques qui façonnent notre culture. 
+										À la CMAH, nous valorisons les talents, les traditions et 
+										les innovations artisanales qui enrichissent la vie quotidienne et
+										préservent notre patrimoine haïtien.
+							    	</p>
+							    	<a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+							    </div>
+							  </div>
+							</div>							
+						</div>
+						<div class="col-lg-4">
+							<div class="single-service">
+							  <span class="lnr lnr-rocket"></span>
+							  <h4>Expositions en cours</h4>
+							  <p>
+							  	Lun - Ven : 10h00 à 17h00
+								Sam : 12h00 à 15h00
+								Dimanche : Fermé
+							  </p>						 	
+							  <div class="overlay">
+							    <div class="text">
+							    	<p>
+							    		Ici, nous mettons en lumière une sélection d’œuvres artisanales et 
+										artistiques exposées pour valoriser la richesse de notre patrimoine culturel.
+										À travers ces expositions, la CMAH célèbre la créativité, l’identité et 
+										le talent des artisans haïtiens.
+							    	</p>
+							    	<a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+							    </div>
+							  </div>
+							</div>							
+						</div>
+						<div class="col-lg-4">
+							<div class="single-service">
+							  <span class="lnr lnr-briefcase"></span>
+							  <h4>Événements d’ouverture</h4>
+							  <p>
+							  	Lun - Ven : 10h00 à 17h00
+								Sam : 12h00 à 15h00
+								Dimanche : Fermé
+							  </p>						 	
+							  <div class="overlay">
+							    <div class="text">
+							    	<p>
+							    		Ici, nous mettons en avant une variété d’événements artistiques et 
+										culturels qui rythment la vie de notre communauté. Chaque exposition, 
+										atelier ou rencontre est une occasion de célébrer la richesse de 
+										l’artisanat haïtien et de créer des liens entre tradition et innovation.
+							    	</p>
+							    	<a href="#" class="text-uppercase primary-btn">Buy ticket</a>
+							    </div>
+							  </div>
+							</div>							
+						</div>												
+					</div>
+				</div>	
+			</section>
+			<!-- End service Area -->
+			
+			<!-- Start quote Area -->
+			<section class="quote-area section-gap">
+				<div class="container">				
+					<div class="row">
+						<div class="col-lg-6 quote-left">
+							
+							<h1>
+								<img style="width: 100px;" src="img/cmah1.png" alt="" title="" />
+								<span>La CMAH </span> est une association évoluant dans le secteur de l’artisanat et des métiers ;  <br>
+								elle joue un rôle crucial dans <span>la promotion et le développement</span> du savoir-faire haïtien dans ce domaine.  <br>
+							 <span></span>.
+							 
+							</h1>
+							
+						</div>
+						<div class="col-lg-6 quote-right">
+							<p>
+								Consciente des défis auxquels font face les artisans en matière de compétitivité, d’accès aux marchés, et de structuration, la CMAH s’est engagée à soutenir ses membres à travers un plan stratégique sur trois ans (2025-2028). Ce plan vise à professionnaliser le secteur, renforcer les capacités des artisans y compris des femmes et hommes de métier et valoriser les produits artisanaux tant au niveau national qu'international.
+
+							</p>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End quote Area -->
+
+			<!-- Start exibition Area -->
+			<section class="exibition-area section-gap" id="exhibitions">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">Actualités / Annonces récentes</h1>
+								<!--<p>Who are in extremely love with eco friendly system.</p>-->
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-exibition-carusel">
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img29.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img28.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img27.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>							
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img26.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img25.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img src="img/images_cmah/img23.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>							
+							<div class="single-exibition item">
+								<img src="img/images_cmah/images10.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img class="img-fluid" src="img/images_cmah/img22.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+
+							<div class="single-exibition item">
+								<img class="img-fluid" src="img/images_cmah/img30.jpg" alt="">
+								<!-- <ul class="tags">
+									<li><a href="#">Travel</a></li>
+									<li><a href="#">Life style</a></li>
+								</ul> -->
+								<a href="#"><h4>Portable latest blog for women</h4></a>
+								<p>
+									Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+								</p>
+								<h6 class="date">31st January, 2018</h6>
+							</div>
+						</div>													
+					</div>
+				</div>	
+			</section>
+			<!-- End exibition Area -->			
+		
+			<!-- Start upcoming-event Area -->
+			  <section class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Événements</h1>
+                <p class="section-subtitle">Découvrez nos prochains événements et archives</p>
+            </div>
+            
+            <!-- Agenda des événements -->
+            <div class="sub-section">
+                <h2 class="sub-section-title">Agenda des événements</h2>
+                <p>Foires, salons, ateliers et autres activités à venir</p>
+                
+                <div class="events-grid">
+                    <!-- Événement 1 -->
+                    <div class="event-card">
+                        <img src="img/images_cmah/images2.jpg" alt="Foire Commerciale" class="event-image">
+                        <div class="event-content">
+                            <span class="event-date">15-17 Novembre 2023</span>
+                            <h3 class="event-title">Foire Commerciale Internationale</h3>
+                            <p class="event-location"><i>📍</i> Centre des Congrès, Port-au-Prince</p>
+                            <p class="event-description">La plus grande foire commerciale de l'année avec des exposants internationaux et des opportunités de networking.</p>
+                            <a href="#" class="event-link">Plus d'informations →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Événement 2 -->
+                    <div class="event-card">
+                        <img src="img/images_cmah/images3.jpg" alt="Atelier Technologie" class="event-image">
+                        <div class="event-content">
+                            <span class="event-date">25 Novembre 2023</span>
+                            <h3 class="event-title">Atelier sur les Nouvelles Technologies</h3>
+                            <p class="event-location"><i>📍</i> Université Quisqueya, Port-au-Prince</p>
+                            <p class="event-description">Apprenez les dernières tendances technologiques et leurs applications pratiques pour les entreprises locales.</p>
+                            <a href="#" class="event-link">S'inscrire →</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Événement 3 -->
+                    <div class="event-card">
+                        <img src="img/images_cmah/images6.jpg" alt="Salon Entrepreneuriat" class="event-image">
+                        <div class="event-content">
+                            <span class="event-date">5-7 Décembre 2023</span>
+                            <h3 class="event-title">Salon de l'Entrepreneuriat</h3>
+                            <p class="event-location"><i>📍</i> Hôtel Karibe, Pétion-Ville</p>
+                            <p class="event-description">Rencontrez des investisseurs et découvrez des opportunités pour développer votre entreprise.</p>
+                            <a href="#" class="event-link">Voir programme →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Archives des événements passés -->
+            <div class="sub-section">
+                <h2 class="sub-section-title">Archives des événements passés</h2>
+                <p>Retrouvez tous nos événements précédents</p>
+                
+                <ul class="archive-list">
+                    <li class="archive-item">
+                        <span class="archive-year">2023</span>
+                        <a href="#" class="archive-link">Voir tous les événements de 2023</a>
+                    </li>
+                    <li class="archive-item">
+                        <span class="archive-year">2022</span>
+                        <a href="#" class="archive-link">Voir tous les événements de 2022</a>
+                    </li>
+                    <li class="archive-item">
+                        <span class="archive-year">2021</span>
+                        <a href="#" class="archive-link">Voir tous les événements de 2021</a>
+                    </li>
+                    <li class="archive-item">
+                        <span class="archive-year">2020</span>
+                        <a href="#" class="archive-link">Voir tous les événements de 2020</a>
+                    </li>
+                    <li class="archive-item">
+                        <span class="archive-year">2019</span>
+                        <a href="#" class="archive-link">Voir tous les événements de 2019</a>
+                    </li>
+					<a href="evenements.html" class="see-more-btn">Voir plus d'événements <span style="margin-left: 5px;">→</span> </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+			<!-- <section class="upcoming-event-area section-gap" id="events">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-10">
+							<div class="title text-center">
+								<h1 class="mb-10">Découvrez nos événements à venir.</h1>
+								<p>Qui nourrissent un amour profond pour l’art.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-6 event-left">
+							<div class="single-events">
+								<img class="img-fluid" src="img/b7.jpg" alt="">
+								<a href="#"><h4>Event on the rock solid carbon</h4></a>
+								<h6><span>21st February</span> at Central government museum</h6>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+								</p>
+								<a href="#" class="primary-btn text-uppercase">View Details</a>
+							</div>
+							<div class="single-events">
+								<img class="img-fluid" src="img/b8.jpg" alt="">
+								<a href="#"><h4>Event on the rock solid carbon</h4></a>
+								<h6><span>21st February</span> at Central government museum</h6>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+								</p>
+								<a href="#" class="primary-btn text-uppercase">View Details</a>
+							</div>							
+						</div>
+						<div class="col-lg-6 event-right">
+							<div class="single-events">
+								<a href="#"><h4>Event on the rock solid carbon</h4></a>
+								<h6><span>21st February</span> at Central government museum</h6>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+								</p>
+								<a href="#" class="primary-btn text-uppercase">View Details</a>
+								<img class="img-fluid" src="img/b7.jpg" alt="">
+							</div>
+							<div class="single-events">
+								
+								<a href="#"><h4>Event on the rock solid carbon</h4></a>
+								<h6><span>21st February</span> at Central government museum</h6>
+								<p>
+									inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially.
+								</p>
+								<a href="#" class="primary-btn text-uppercase">View Details</a>
+								<img class="img-fluid" src="img/b8.jpg" alt="">
+							</div>							
+						</div>
+					</div>
+				</div>	
+			</section> -->
+			<!-- End upcoming-event Area -->
+			
+			<!-- Start blog Area -->
+			<section class="blog-area section-gap" id="blog">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Dernières nouvelles de notre blog</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>					
+					<div class="row">
+						<div class="col-lg-3 col-md-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="img/b1.jpg" alt="">								
+							</div>
+							<p class="date">10 Jan 2018</p>
+							<a href="#"><h4>Quand l’Artisanat Devient un Mode d’Expression</h4></a>
+							<p>
+    							Loin d’être simplement décoratif, 
+								l’artisanat haïtien reflète des histoires, 
+								des croyances et des luttes à travers chaque création.
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="img/b2.jpg" alt="">								
+							</div>
+							<p class="date">10 Jan 2018</p>
+							<a href="#"><h4>Redonner Vie aux Objets : L’Art du Recyclage Créatif</h4></a>
+							<p>
+    							De simples morceaux de métal ou 
+								de tissu deviennent des chefs-d’œuvre 
+								entre les mains de nos artisans locaux, 
+								prônant une création éco-responsable.
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="img/b3.jpg" alt="">								
+							</div>
+							<p class="date">10 Jan 2018</p>
+							<a href="#"><h4>Les Femmes au Cœur de l’Artisanat Haïtien</h4></a>
+							<p>
+    							Mères, artistes, entrepreneures… 
+								les femmes jouent un rôle clé dans la transmission et 
+								la valorisation des savoir-faire traditionnels.
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>
+						<div class="col-lg-3 col-md-6 single-blog">
+							<div class="thumb">
+								<img class="img-fluid" src="img/b4.jpg" alt="">								
+							</div>
+							<p class="date">10 Jan 2018</p>
+							<a href="#"><h4>Pourquoi Acheter Local Change Tout</h4></a>					
+							<p>
+    							Choisir un produit fait main, c’est soutenir une économie plus juste, 
+								préserver un patrimoine culturel et faire un geste éthique et solidaire.
+							</p>
+							<div class="meta-bottom d-flex justify-content-between">
+								<p><span class="lnr lnr-heart"></span> 15 Likes</p>
+								<p><span class="lnr lnr-bubble"></span> 02 Comments</p>
+							</div>									
+						</div>							
+					</div>
+				</div>	
+			</section>
+			<!-- End blog Area -->
+<!-- Section Galerie Professionnelle -->
+<section id="media-gallery" class="media-gallery-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Galerie Média</h2>
+            <p class="section-subtitle">Explorez notre univers en images et vidéos</p>
+            <div class="divider"></div>
+        </div>
+        
+        <!-- Filtres -->
+        <div class="gallery-controls">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="photo">Photos</button>
+                <button class="filter-btn" data-filter="video">Vidéos</button>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Rechercher..." class="gallery-search">
+                <i class="search-icon">🔍</i>
+            </div>
+        </div>
+        
+        <!-- Grille Galerie -->
+        <div class="gallery-grid">
+            <!-- Item Photo -->
+            <div class="gallery-item photo" data-tags="nature paysage extérieur">
+                <div class="media-wrapper">
+                    <img src="img/b3.jpg" 
+                         alt="Travail professionnel" 
+                         class="gallery-media">
+                    <div class="media-badge">Photo</div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">Projet Commercial</h3>
+                    <p class="item-date">15 Juin 2024</p>
+                    <p class="item-desc">Description concise du projet et des réalisations</p>
+                    <button class="view-btn">Voir en détail</button>
+                </div>
+            </div>
+            
+            <!-- Item Vidéo -->
+            <div class="gallery-item video" data-tags="présentation entreprise">
+                <div class="media-wrapper">
+                    <video class="gallery-media" poster="https://v1.pinimg.com/videos/mc/expMp4/31/d5/5c/31d55c8980e008ac498dc0f0c0ebb09d_t1.mp4">
+                        <source src="https://v1.pinimg.com/videos/mc/expMp4/31/d5/5c/31d55c8980e008ac498dc0f0c0ebb09d_t1.mp4" type="video/mp4">
+                    </video>
+                    <div class="media-badge">Vidéo</div>
+                    <button class="play-btn">▶</button>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-title">Présentation Entreprise</h3>
+                    <p class="item-date">10 Mai 2024</p>
+                    <p class="item-desc">Vidéo corporative de notre organisation</p>
+                    <button class="view-btn">Regarder</button>
+                </div>
+            </div>
+            
+            <!-- Plus d'items ici... -->
+        </div>
+        
+        <!-- Pagination -->
+        <div class="gallery-pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn next-btn">Suivant →</button>
+        </div>
+    </div>
+    
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal">
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <div class="lightbox-media-container"></div>
+            <div class="lightbox-caption">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-desc"></p>
+            </div>
+        </div>
+    </div>
+</section>
+			<!-- Start gallery Area -->
+			<section class="gallery-area section-gap" id="gallery">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-70 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10 text-white">Notre galerie d’exposition.</h1>
+								<p> Découvrez en images la richesse et 
+									la créativité de notre artisanat à 
+									travers nos expositions et œuvres uniques.</p>
+							</div>
+						</div>
+					</div>						
+					<div id="grid-container" class="gallery-grid">
+						<a class="single-gallery" href="img/images_cmah/img23.jpg"><img class="grid-item" src="img/images_cmah/img23.jpg" alt=""></a>
+						<a class="single-gallery" href="img/images_cmah/img24.jpg"><img class="grid-item" src="img/images_cmah/img24.jpg" alt=""></a>
+						<a class="single-gallery" href="img/images_cmah/img25.jpg"><img class="grid-item" src="img/images_cmah/img25.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g4.jpg"><img class="grid-item" src="img/images_cmah/img13.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g5.jpg"><img class="grid-item" src="img/images_cmah/img26.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g6.jpg"><img class="grid-item" src="img/images_cmah/img27.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g7.jpg"><img class="grid-item" src="img/images_cmah/img28.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g8.jpg"><img class="grid-item" src="img/images_cmah/images9.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g9.jpg"><img class="grid-item" src="img/images_cmah/img12.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g10.jpg"><img class="grid-item" src="img/images_cmah/img13.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g11.jpg"><img class="grid-item" src="img/images_cmah/img29.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g13.jpg"><img class="grid-item" src="img/images_cmah/img30.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g4.jpg"><img class="grid-item" src="img/images_cmah/img31.jpg" alt=""></a>
+						<a class="single-gallery" href="img/g5.jpg"><img class="grid-item" src="img/images_cmah/images8.jpg" alt=""></a>						
+					</div>	
+				</div>	
+			</section>
+			<!-- End gallery Area -->
+			
+
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>A Propos</h6>
+									<p>
+								<span>La CMAH </span> est une association évoluant dans le secteur de l’artisanat et des métiers ;  <br>
+								Elle joue un rôle crucial dans <span>la promotion et le développement</span> du savoir-faire haïtien dans ce domaine.  <br>
+							 <span></span>.
+									</p>
+								
+								<p class="footer-text">
+									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> and distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a> -->
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p>Restez informé de nos dernières actualités </p>
+								<div class="" id="mc_embed_signup">
+									<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+										<input class="form-control" name="EMAIL" placeholder="Entrez votre email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+			                            	<button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
+			                            	<div style="position: absolute; left: -5000px;">
+												<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+											</div>
+
+										<div class="info"></div>
+									</form>
+								</div>
+							</div>
+						</div>						
+						<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+							<div class="single-footer-widget">
+								<h6>Suivez-nous</h6>
+								<p>Restons connectés</p>
+								<div class="footer-social d-flex align-items-center">
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-twitter"></i></a>
+									<a href="#"><i class="fa fa-dribbble"></i></a>
+									<a href="#"><i class="fa fa-behance"></i></a>
+								</div>
+							</div>
+						</div>							
+					</div>
+				</div>
+			</footer>	
+			<!-- End footer Area -->
+			 
+			
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>	
+			<script src="js/imagesloaded.pkgd.min.js"></script>
+			<script src="js/justified.min.js"></script>					
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>		
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		</body>
+	</html>
+
+
+
