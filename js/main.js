@@ -296,26 +296,40 @@ $(document).ready(function(){
         });
     });
 
+//bar de recherche
 
+document.addEventListener('DOMContentLoaded', () => {
+  const searchBtn = document.getElementById('searchBtn');
+  const searchOverlay = document.getElementById('searchOverlay');
+  const closeBtn = document.getElementById('closeSearchBtnOverlay');
+  const searchInput = document.getElementById('searchBarOverlay');
 
-document.getElementById('searchBtn').addEventListener('click', function() {
-    const searchBar = document.getElementById('searchBar');
-    searchBar.style.display = 'block';
-    searchBar.classList.toggle('active');
-    
-    // Si ou vle search bar la vin aktif (focus) otomatikman
-    if (searchBar.classList.contains('active')) {
-        searchBar.focus();
+  searchBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    searchOverlay.style.display = 'flex';
+    searchInput.focus();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    searchOverlay.style.display = 'none';
+    searchInput.value = '';
+  });
+
+  // Fèmen si klike deyò input la
+  searchOverlay.addEventListener('click', (e) => {
+    if (e.target === searchOverlay) {
+      searchOverlay.style.display = 'none';
+      searchInput.value = '';
     }
+  });
 });
 
-// Pou fèmen search bar la lè w klike deyò
-document.addEventListener('click', function(event) {
-    const searchContainer = document.querySelector('.search-container');
-    if (!searchContainer.contains(event.target)) {
-        document.getElementById('searchBar').classList.remove('active');
-    }
-});
+
+
+
+
+
+
 
 
 // Script pour le changement de langue (visuel seulement)

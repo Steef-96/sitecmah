@@ -1,7 +1,3 @@
-#bannerCarousel img {
-  height: 400px;
-  object-fit: cover;
-}
 
   /* Styles de base gallerie */
     .media-gallery-section {
@@ -85,14 +81,46 @@
         border-radius: 30px;
         outline: none;
     }
-    
-    .search-icon {
+.search-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: none; /* kache pa default */
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.search-bar-overlay {
+  width: 80%;
+  max-width: 600px;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.close-search-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
         position: absolute;
         right: 15px;
         top: 50%;
         transform: translateY(-50%);
         color: #777;
-    }
+}
     
     /* Grille Galerie */
     .gallery-grid {
